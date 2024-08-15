@@ -3,7 +3,7 @@ def substrings(string, dictionary)
   string = string.downcase
   now_array = string.split(" ")
   hash = Hash.new(0)
-  filter = dictionary.filter do |word|
+  dictionary.filter do |word|
     now_array.each do |x|
       res = x.include?(word)
       if res == true
