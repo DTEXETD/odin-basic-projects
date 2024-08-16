@@ -8,7 +8,6 @@ def bubble_sort(array)
       unless nextvalue.nil?
         if value > nextvalue
           array[i + 1], array[i] = array[i], array[i + 1]
-        else
         end
       end
       i += 1
