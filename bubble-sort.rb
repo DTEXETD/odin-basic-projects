@@ -5,11 +5,7 @@ def bubble_sort(array)
     while i < array.length
       value = array[i]
       nextvalue = array[i + 1]
-      unless nextvalue.nil?
-        if value > nextvalue
-          array[i + 1], array[i] = array[i], array[i + 1]
-        end
-      end
+      array[i + 1], array[i] = array[i], array[i + 1] if !nextvalue.nil? && value > (nextvalue)
       i += 1
     end
     counter += 1
@@ -17,4 +13,4 @@ def bubble_sort(array)
   array
 end
 
-p bubble_sort([4,3,78,2,0,2])
+p bubble_sort([4, 3, 78, 2, 0, 2])
